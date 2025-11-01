@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi"
+      xmlns:layout="https://www.ultraq.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sân bóng - SânBóng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body class="bg-white">
+
+    <div layout:fragment="main-content">
+
+        <!-- Search & Filter Section -->
+        <section class="pt-32 pb-8 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-3xl font-bold text-gray-900 mb-6">Tìm sân bóng</h1>
+
+                <form class="bg-white rounded-2xl shadow-lg p-6 mb-8" id="filterForm">
+                    <div class="grid sm:grid-cols-4 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Địa điểm</label>
+                            <input type="text" id="filterLocation" placeholder="Nhập địa điểm..." class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Loại sân</label>
+                            <select id="filterType" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Tất cả</option>
+                                <option value="5v5">5v5</option>
+                                <option value="7v7">7v7</option>
+                                <option value="11v11">11v11</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Giá (VNĐ)</label>
+                            <select id="filterPrice" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Tất cả</option>
+                                <option value="300">Dưới 300,000</option>
+                                <option value="400">300,000 - 400,000</option>
+                                <option value="500">Trên 400,000</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Xếp hạng</label>
+                            <select id="filterRating" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="">Tất cả</option>
+                                <option value="5">5 sao</option>
+                                <option value="4">4 sao trở lên</option>
+                                <option value="3">3 sao trở lên</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex gap-3">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold transition">
+                            Tìm kiếm
+                        </button>
+                        <button type="reset" class="bg-gray-200 hover:bg-gray-300 text-gray-900 px-6 py-2.5 rounded-lg font-semibold transition">
+                            Xóa bộ lọc
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Venues List -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div id="venuesList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Venues will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+<!--    <script th:src="@{js/main.js}"></script>-->
+    <th:block layout:fragment="page-scripts">
+        <script th:src="@{/js/venues.js}"></script>
+    </th:block>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi"
+      xmlns:layout="https://www.ultraq.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về chúng tôi - SânBóng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body class="bg-white">
+    <div layout:fragment="main-content">
+        <!-- Hero Section -->
+        <section class="pt-32 pb-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-4">Về <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SânBóng</span></h1>
+                <p class="text-xl text-gray-600">Nền tảng đặt sân bóng số 1 tại Việt Nam</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Story -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Câu chuyện của chúng tôi</h2>
+                    <p class="text-gray-600 text-lg mb-4">
+                        SânBóng được thành lập vào năm 2023 với mục đích đơn giản: giúp người yêu bóng đá tìm kiếm và đặt sân dễ dàng hơn.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-4">
+                        Chúng tôi nhận thấy rằng việc tìm một sân bóng chất lượng là một thách thức lớn. Các sân bóng phân tán khắp thành phố,
+                        không có một nền tảng thống nhất, và người dùng phải gọi điện hoặc tìm kiếm trên các trang web khác nhau.
+                    </p>
+                    <p class="text-gray-600 text-lg">
+                        Vì vậy, chúng tôi đã tạo ra SânBóng - một nền tảng tất cả trong một, nơi bạn có thể tìm, so sánh, đặt và thanh toán
+                        cho sân bóng chỉ trong vài phút.
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div class="mb-16 bg-blue-50 rounded-xl p-8 border border-blue-200">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Sứ mệnh của chúng tôi</h2>
+                    <p class="text-gray-600 text-lg">
+                        Chúng tôi tin rằng mọi người đều xứng đáng có cơ hội tham gia các hoạt động thể thao yêu thích của họ một cách dễ dàng.
+                        Sứ mệnh của chúng tôi là kết nối người chơi bóng với các sân bóng tốt nhất, giúp họ tiết kiệm thời gian, tiền bạc và
+                        tạo ra những kỷ niệm tuyệt vời cùng bạn bè.
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Giá trị của chúng tôi</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="border border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">✨</span>
+                                Chất lượng
+                            </h3>
+                            <p class="text-gray-600">
+                                Chúng tôi chỉ hợp tác với các sân bóng có cơ sở vật chất tốt, dịch vụ chuyên nghiệp, đảm bảo trải nghiệm tốt nhất.
+                            </p>
+                        </div>
+                        <div class="border border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">⚡</span>
+                                Tốc độ
+                            </h3>
+                            <p class="text-gray-600">
+                                Đặt sân không bao giờ dễ dàng đến vậy. Chỉ cần vài click, bạn đã có sân bóng cho buổi tập hôm nay.
+                            </p>
+                        </div>
+                        <div class="border border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">💰</span>
+                                Giá cạnh tranh
+                            </h3>
+                            <p class="text-gray-600">
+                                Chúng tôi giúp bạn so sánh giá từ nhiều sân khác nhau, đảm bảo bạn luôn nhận được giá tốt nhất.
+                            </p>
+                        </div>
+                        <div class="border border-gray-200 rounded-xl p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                                <span class="text-2xl">🤝</span>
+                                Tin tưởng
+                            </h3>
+                            <p class="text-gray-600">
+                                Tất cả các giao dịch được bảo vệ, thanh toán an toàn, và dữ liệu cá nhân của bạn được giữ bí mật.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-8 mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Thành tích của chúng tôi</h2>
+                    <div class="grid md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">150+</div>
+                            <p class="text-blue-100">Sân bóng hợp tác</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">25,000+</div>
+                            <p class="text-blue-100">Người dùng tích cực</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">10,000+</div>
+                            <p class="text-blue-100">Đặt sân/tháng</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">4.8/5</div>
+                            <p class="text-blue-100">Đánh giá trung bình</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8">Đội ngũ của chúng tôi</h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Chúng tôi là một nhóm những người yêu bóng đá, những lập trình viên, và những doanh nhân với một mục đích chung:
+                        làm cho việc đặt sân bóng trở nên đơn giản và vui vẻ.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+<!--                            <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full mx-auto mb-4"></div>-->
+                            <img th:src="@{/images/team/CEO.jpg}" alt="joan laporta"
+                                 class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-gray-900 mb-1">Nguyễn Văn A</h4>
+                            <p class="text-gray-600 text-sm">Nhà sáng lập & CEO</p>
+                        </div>
+                        <div class="text-center">
+<!--                            <div class="w-24 h-24 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full mx-auto mb-4"></div>-->
+                            <img th:src="@{/images/team/GiamDocKinhDoanh.jpg}" alt="Deco"
+                                 class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-gray-900 mb-1">Trần Thị B</h4>
+                            <p class="text-gray-600 text-sm">CTO & Kỹ sư chính</p>
+                        </div>
+                        <div class="text-center">
+<!--                            <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-4"></div>-->
+                            <img th:src="@{/images/team/CTO.jpg}" alt="Hansi Flick"
+                                 class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-gray-900 mb-1">Phạm Văn C</h4>
+                            <p class="text-gray-600 text-sm">Giám đốc kinh doanh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact CTA -->
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Có câu hỏi?</h2>
+                    <p class="text-gray-600 text-lg mb-6">Liên hệ với chúng tôi ngay để biết thêm thông tin.</p>
+                    <a th:href="@{/contact}" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition">
+                        Liên hệ chúng tôi
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+<script th:src="@{js/main.js}"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 // Navigation Functions
-function openLogin() {
-    alert('Tính năng đăng nhập sẽ được triển khai sớm. Hiện tại, bạn có thể duyệt và đặt sân!');
-}
+// function openLogin() {
+//     alert('Tính năng đăng nhập sẽ được triển khai sớm. Hiện tại, bạn có thể duyệt và đặt sân!');
+// }
 
 function goToVenue(venueId) {
     sessionStorage.setItem('selectedVenue', venueId);

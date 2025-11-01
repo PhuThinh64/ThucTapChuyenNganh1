@@ -37,5 +37,16 @@ public class HomeController {
     public String about(){
         return "about";
     }
-
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
+    @GetMapping("/forgot-password")
+    public String forgotPassword(){
+        return "forgot-password";
+    }
+    @GetMapping("/register")
+    public String register(){
+        return "register";
+    }
 }
